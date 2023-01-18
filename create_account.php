@@ -77,7 +77,7 @@
         </div>
 
         <div class="mx-5">
-        <button class="btn btn-primary btn-lg mx-5" type="submit">Sign In</button>
+        <button class="btn btn-primary btn-lg mx-5" type="submit">Sign Up</button>
         </div>
         <div class="sign-up">
             <p class="fs-5 text-center ms-1">If you have an account, click <a href="account.php">Sign In</a></p>

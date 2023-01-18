@@ -2,8 +2,8 @@
 //database connection 'clienti'
 $servername = "localhost";
 $my_username = "root";
-$my_password = "";
-$dbname = "gamecorrner";
+$my_password = "root";
+$dbname = "gamecorner";
 
 
 // Create connection
