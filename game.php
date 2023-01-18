@@ -17,7 +17,7 @@ $games_array=$conn->Query("SELECT * FROM games");
 
 <div class="container text-center">
             <div class="row">
-                <div class="col-4">
+                <div class="col-3">
 
                 <img src="data:image;base64,<?php echo base64_encode($game["Picture"]);?>" class="card-img-top" alt="..." weight="300px"height="482.66px">
                 
@@ -36,7 +36,7 @@ $games_array=$conn->Query("SELECT * FROM games");
                     <p class="fw-semibold"><?php echo $game['Description'];?></p><br>
                     <p class="fw-semibold"><?php echo $game['Type'];?></p><br>
                     <p class="fw-semibold"><?php echo $game['Description'];?></p><br>
-                    <button type="button" class="btn btn-warning"disabled><h1><?php echo $game['Price'];?> LEI</h1></button>
+                    <button type="button" class="btn btn-warning"><h1><?php echo $game['Price'];?> LEI</h1></button>
             </div>
         </div>
 

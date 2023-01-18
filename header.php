@@ -8,10 +8,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>  
-    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <title>GameCorrner</title>
 </head>
 <body>
-    
+<?php session_start(); ?>
     <nav class="navbar navbar-expand-lg bg-dark" >
   <div class="container-fluid">
     <img src="img/Ado_s.ico.ico" alt="Logo" width="70" height="70" class="d-inline-block align-text-top">
@@ -30,10 +31,11 @@
         <button type="button" class="btn btn-light btn-sm ms-2"><a class="nav-link mb-0 h1 text-black" href="about_us.php">About Us</a></button>
         </li>
         <li class="nav-item">
-        <button type="button" class="btn btn-light btn-sm ms-2"><a class="nav-link mb-0 h1 text-black" href="account.php">Sing In</a></button>
+        <button type="button" class="btn btn-light btn-sm ms-2"><?php    
+    if($_SESSION){echo'<a class="nav-link mb-0 h1 text-black" href="logout.php">Log out</a>';} else {echo '<a class="nav-link mb-0 h1 text-black" href="account.php">Sing In</a>';}?></button>
         </li>
       </ul>
-      
+
     </div>
   </div>
 </nav>
