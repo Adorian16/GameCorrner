@@ -1,5 +1,17 @@
-<?php include 'header.php';?>
+<?php include 'header.php';
+
+?>
 <br>
+<br>
+<div class="welcome-sign">
+      <p class="fs-1 text-center text-white">WELCOME, <?php if($_SESSION){
+        echo strtoupper($_SESSION['username']);
+      }elseif(!$_SESSION){
+        echo 'GAMER';
+      } ?> !</p>
+      <br>
+        <p class="fs-2 text-center text-white">WE HAVE A HOLE GAME UNIVERSE FOR YOU TO EXPLORE !</p>
+        </div>
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -21,8 +33,7 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-        
-       
+      
   </div>
 </div>
 </body>
