@@ -20,6 +20,7 @@ font-size: larger;
     input[type='text'] {
         font-family: Verdana;
         letter-spacing: 0.125em;
+<<<<<<< HEAD
     }
 img.employee{
     width: 20%;
@@ -84,3 +85,6 @@ a.fa-facebook {
     font-size: 30px;
     
   }
+=======
+    }
+>>>>>>> 47b4783d71311d5e43318aa4174ff74ffd06ba27
