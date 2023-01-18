@@ -26,7 +26,7 @@ if(isset($_POST['username'])){session_start();
     <p class="fs-2 fw-bold text-white text-center my-5">SING IN</p>
 </div>
 
-<form acction="sing_in" method="POST">
+<form acction="" method="POST">
 <div class="position-relative">
     <div class="position-absolute top-0 start-50 translate-middle-x">
 
