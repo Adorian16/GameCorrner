@@ -3,7 +3,7 @@ include 'db_connection.php';
 ?>
 <?php 
 
-if(isset($_POST['username'])){session_start();
+if(isset($_POST['username'])){
     $username = $_POST['username'];
     $password = $_POST['password'];
     
@@ -12,13 +12,13 @@ if(isset($_POST['username'])){session_start();
     
     $rows=mysqli_num_rows($login_result);
     
-    if($rows==1){
+    if($rows==1){session_start();
             $_SESSION['username']=$username;
             header("Location: index.php");
     }else {
                 echo "<div class='form'>
                       <h3>Incorrect Username/password.</h3><br/>
-                      <p class='link'>Click here to <a href='login.php'>Login</a> again.</p>
+                      <p class='link'>Click here to <a href='account.php'>Login</a> again.</p>
                       </div>";
             }
         } else {?>
@@ -32,12 +32,12 @@ if(isset($_POST['username'])){session_start();
 
         <div class="input-group mb-3">
             <span class="input-group-text" id="basic-addon1">Username</span>
-            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" name="username">
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" name="username" required>
         </div>
 
         <div class="input-group mb-3">
             <span class="input-group-text" id="basic-addon1">Password</span>
-            <input type="password" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1" name="password">
+            <input type="password" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1" name="password" required>
         </div>
 
         <div class="sign-up">

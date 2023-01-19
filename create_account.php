@@ -16,9 +16,11 @@
         $phone_number = $_POST['phone'];
 
         if (username_already_in_db($username)== TRUE || email_already_in_db($email)== TRUE) {
-            // Show error message
+            
             exit('<p class="fs-2 fw-bold text-white text-center my-5">You tried to inssert a username or email that is already taken.
-            <br>Please choose a other one.<br><a class=""href="create_account.php">Go back</a></p>');}else{
+            <br>Please choose a other one.<br><a class=""href="create_account.php">Go back</a></p>');}
+            
+        else{
 
         $query_register="INSERT INTO user (FirstName,LastName,Username,Email,PhoneNumber,Password) VALUES 
         ('$firstname','$lastname','$username','$email','$phone_number','".md5($password)."')";
