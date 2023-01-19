@@ -79,15 +79,8 @@
         </div>
 
         <div class="mx-5">
-<<<<<<< HEAD
+
         <button class="btn btn-primary btn-lg mx-5" type="submit">Sign Up</button>
-=======
-<<<<<<< HEAD
-        <button class="btn btn-primary btn-lg mx-5" type="submit">Sign Up</button>
-=======
-        <button class="btn btn-primary btn-lg mx-5" type="submit">Sign In</button>
->>>>>>> 47b4783d71311d5e43318aa4174ff74ffd06ba27
->>>>>>> 3cb4cec29d61a6cdffddc5fc23d3924b459cc255
         </div>
         <div class="sign-up">
             <p class="fs-5 text-center ms-1">If you have an account, click <a href="account.php">Sign In</a></p>
